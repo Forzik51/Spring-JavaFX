@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s28216.g33c.masfinal.controllers.AddFabrykaController">
+    <children>
+
+
+<AnchorPane fx:id="mainPane" prefHeight="500.0" prefWidth="700.0" >
+
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="-1.0" prefHeight="70.0" prefWidth="706.0">
+            <children>
+                <Pane prefHeight="70.0" prefWidth="57.0" />
+                <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="27.0" prefWidth="594.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Dodanie fabryki" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+                <Label style="-fx-background-color: #333; -fx-text-fill: white;                     -fx-alignment: center; -fx-min-width: 32px; -fx-min-height: 32px;                     -fx-background-radius: 16px;" text="D" />
+            </children>
+        </HBox>
+
+        <HBox alignment="CENTER" layoutY="100.0" prefHeight="100.0" prefWidth="705.0" spacing="50">
+            <children>
+                <VBox alignment="TOP_LEFT" prefHeight="70.0" prefWidth="275" spacing="8" style="-fx-background-color: #E0E0E0;-fx-background-radius: 10;-fx-padding: 12;">
+                    <children>
+                        <Label style="-fx-font-size: 12px;-fx-text-fill: #333333;" text="Nazwa *" />
+                        <TextField fx:id="nazwaFabryki" promptText="Nazwa *" style="-fx-background-color: white;-fx-background-radius: 5;-fx-padding: 6 8;" />
+                    </children>
+                </VBox>
+
+
+                <VBox alignment="TOP_LEFT" prefHeight="70.0" prefWidth="275" spacing="8" style="-fx-background-color: #E0E0E0;-fx-background-radius: 10;-fx-padding: 12">
+                    <children>
+                        <Label style="-fx-font-size: 12px;-fx-text-fill: #333333;" text="Lokalizacja *" />
+                        <TextField fx:id="lokalizacjaFabryki" promptText="Lokalizacja *" style="-fx-background-color: white;-fx-background-radius: 5;-fx-padding: 6 8;" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+
+        <HBox alignment="CENTER_RIGHT" layoutX="-4.0" layoutY="416.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="84.0" prefWidth="706.0">
+            <children>
+                <Button fx:id="dodajFabrykaButton" contentDisplay="CENTER" onAction="#addFabryka" prefHeight="36.0" prefWidth="600.0" style=" -fx-background-color: #E0E0E0; -fx-text-fill: #333333; -fx-font-size: 14px; -fx-padding: 8 40; -fx-background-radius: 20px; " text="Dodaj fabrykę" />
+                <Pane prefHeight="64.0" prefWidth="50.0" />
+            </children></HBox>
+
+    </children>
+
+</AnchorPane>
+
+
+    </children>
+</StackPane>

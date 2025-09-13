@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s28216.g33c.masfinal.controllers.KontraktController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="-1.0" prefHeight="70.0" prefWidth="706.0">
+         <children>
+            <Pane prefHeight="70.0" prefWidth="57.0" />
+             <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="27.0" prefWidth="594.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Kontrakty" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+             <Label style="-fx-background-color: #333; -fx-text-fill: white;                     -fx-alignment: center; -fx-min-width: 32px; -fx-min-height: 32px;                     -fx-background-radius: 16px;" text="D" />
+         </children>
+      </HBox>
+
+       <HBox layoutX="51.0" layoutY="79.0" prefHeight="17.0" prefWidth="600.0" spacing="20">
+           <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="40" text="Id" />
+           <Label alignment="CENTER" prefWidth="210" text="Opis" />
+           <Label alignment="CENTER" prefWidth="100" text="Status" />
+           <Label alignment="CENTER" prefWidth="90" text="Wartość" />
+           <Label alignment="CENTER" prefWidth="40" text="Liczba" />
+       </HBox>
+
+      <ListView fx:id="kontraktList" layoutX="51.0" layoutY="96.0" prefHeight="320.0" prefWidth="600.0">
+      </ListView>
+
+      <HBox alignment="CENTER_RIGHT" layoutX="-4.0" layoutY="416.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="84.0" prefWidth="706.0">
+         <children>
+             <Button fx:id="kontraktListButton" contentDisplay="CENTER" onAction="#selectKontrakt" style="-fx-background-color: #0066FF; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 8 40; -fx-background-radius: 20px; -fx-end-margin: 50px;" text="Dalej">
+             </Button>
+            <Pane prefHeight="64.0" prefWidth="25.0" />
+         </children></HBox>
+   </children>
+</AnchorPane>
